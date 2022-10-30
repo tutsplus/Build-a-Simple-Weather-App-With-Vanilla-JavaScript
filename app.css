@@ -64,9 +64,9 @@ h3 {
 	margin: 0;
 }
 
-h3 span,
 small,
-.form-msg {
+.form-msg,
+.city__country {
 	font-size: .75rem;
 	line-height: 1.5;
 }
@@ -159,7 +159,18 @@ form button:active {
 	border-radius: 0 0 var(--global-border-radius) var(--global-border-radius);
 	width: 75%;
 	margin-left: .75rem;
-	display: none;
+	/* display: none; */
+	transform: translate3d(0, -100%, 0);
+	opacity: 0;
+	transition: var(--global-transition);
+	position: relative;
+	z-index: -1;
+}
+
+.form-msg.visible {
+	/* display: block; */
+	transform: translate3d(0, 0, 0);
+	opacity: 1;
 }
 
 .form-row {
