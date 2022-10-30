@@ -18,69 +18,80 @@
 	<link rel="stylesheet" href="app.css">
 </head>
 <body>
+	<div class="notification">
+		<p><small>This demo needs an OpenWeather API key to work. <a target="_blank" href="https://home.openweathermap.org/users/sign_up">Get yours here for free!</a></small></p>
+	</div>  <!-- notify -->
+
 	<div class="container">
 		<header>
 			<h1>Add location</h1>
 
 			<form>
 				<label for="search-term">Search the city or area</label>
-				<input type="text" placeholder="e.g. Mallorca" name="search-term" id="search-term" autofocus>
 
-				<button type="submit">
-					<img src="img/plus-circle.svg" alt="Plus circle">
-				</button>
+				<div class="form-row">
+					<input type="text" placeholder="e.g. Mallorca" name="search-term" id="search-term" autofocus>
 
-				<p class="form-msg">You already know the weather for Athens ...otherwise be more specific by providing the country code as well 😉</p>
+					<button type="submit">
+						<img src="img/plus-circle.svg" alt="Plus circle">
+					</button>
+				</div> <!-- form-row -->
+
+				<p class="form-msg"></p>
 			</form>
 		</header>
 
-		<section id="ajax" class="grid">
+		<section id="ajax">
 			<ul class="cities">
 				<li class="city">
 					<figure>
 						<img src="img/weather/01d.svg" class="city__icon" alt="Weather">
 					</figure>
 
-					<h2 class="city__temp">21<sup>°C</sup></h2>
-					<p class="city__conditions">Few clouds</p>
-
-					<h3 class="city__name">Barcelona <span>ES</span></h3>
+					<div>
+						<h2 class="city__temp">21<sup>°C</sup></h2>
+						<p class="city__conditions">Few clouds</p>
+						<h3 class="city__name">Barcelona<span class="city__country">ES</span></h3>
+					</div>
 				</li>
 				<li class="city">
 					<figure>
 						<img src="img/weather/01d.svg" class="city__icon" alt="Weather">
 					</figure>
 
-					<h2 class="city__temp">21<sup>°C</sup></h2>
-					<p class="city__conditions">Few clouds</p>
-
-					<h3 class="city__name">Barcelona <span>ES</span></h3>
+					<div>
+						<h2 class="city__temp">21<sup>°C</sup></h2>
+						<p class="city__conditions">Few clouds</p>
+						<h3 class="city__name">Barcelona<span class="city__country">GR</span></h3>
+					</div>
 				</li>
 				<li class="city">
 					<figure>
 						<img src="img/weather/01d.svg" class="city__icon" alt="Weather">
 					</figure>
 
-					<h2 class="city__temp">21<sup>°C</sup></h2>
-					<p class="city__conditions">Few clouds</p>
-
-					<h3 class="city__name">Barcelona <span>ES</span></h3>
+					<div>
+						<h2 class="city__temp">21<sup>°C</sup></h2>
+						<p class="city__conditions">Few clouds</p>
+						<h3 class="city__name">Barcelona<span class="city__country">RO</span></h3>
+					</div>
 				</li>
 				<li class="city">
 					<figure>
 						<img src="img/weather/01d.svg" class="city__icon" alt="Weather">
 					</figure>
 
-					<h2 class="city__temp">21<sup>°C</sup></h2>
-					<p class="city__conditions">Few clouds</p>
-
-					<h3 class="city__name">Barcelona <span>ES</span></h3>
+					<div>
+						<h2 class="city__temp">21<sup>°C</sup></h2>
+						<p class="city__conditions">Few clouds</p>
+						<h3 class="city__name">Barcelona<span class="city__country">ES</span></h3>
+					</div>
 				</li>
 			</ul>
 		</section> <!-- grid -->
 
 		<footer>
-			<p>Design and code by <a href="https://www.adipurdila.com/">Adi Purdila</a> and <a href="https://georgemartsoukos.com/">George Martsoukos</a>.</p>
+			<p><small>Design and code by <a href="https://www.adipurdila.com/">Adi Purdila</a> and <a href="https://georgemartsoukos.com/">George Martsoukos</a>.</small></p>
 		</footer>
 	</div> <!-- container -->
 </body>
