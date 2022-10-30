@@ -33,6 +33,16 @@ body {
 	color: var(--p-tint-90);
 }
 
+figure {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 .container {
 	padding: 4rem 2rem;
 }
@@ -79,16 +89,6 @@ a {
 
 a:hover {
 	color: var(--p-tint-90);
-}
-
-figure {
-	margin: 0;
-	padding: 0;
-}
-
-img {
-	max-width: 100%;
-	height: auto;
 }
 
 
@@ -140,7 +140,6 @@ form button {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 0;
 	transition: var(--global-transition);
 	cursor: pointer;
 }
@@ -159,7 +158,6 @@ form button:active {
 	border-radius: 0 0 var(--global-border-radius) var(--global-border-radius);
 	width: 75%;
 	margin-left: .75rem;
-	/* display: none; */
 	transform: translate3d(0, -100%, 0);
 	opacity: 0;
 	transition: var(--global-transition);
@@ -168,7 +166,6 @@ form button:active {
 }
 
 .form-msg.visible {
-	/* display: block; */
 	transform: translate3d(0, 0, 0);
 	opacity: 1;
 }
