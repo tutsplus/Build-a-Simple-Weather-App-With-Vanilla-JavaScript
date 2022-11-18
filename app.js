@@ -5,7 +5,7 @@ const msg = document.querySelector(".form-msg")
 const list = document.querySelector(".cities")
 
 // Get your OpenWeather API key: https://home.openweathermap.org/users/sign_up
-const apiKey = ""
+const apiKey = "4d8fb5b93d4af21d66a2948710284366"
 
 form.addEventListener('submit', e => {
 	// Prevent default form submission
